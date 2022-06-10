@@ -1,0 +1,558 @@
+/* cursor */
+body{
+    cursor: default;
+}
+/* nav------------------------------------------------- */
+.top_nav {
+    background-color: rgba(43, 44, 49, 0.993);
+}
+.container{
+    /* padding-left: 64px; */
+    overflow-x: hidden;
+}
+/* 點數區 banner------------------------------------------- */
+/* 桌機版消失 */
+.p_web_d-none{
+    display: none;
+}
+.p_phone_d-none{
+    display: block;
+}
+/* 點數區 banner */
+p {
+    font-size: 16px;
+}
+
+.point-section_banner {
+    width: 100%;
+    padding-top: 106px;
+    /*補上了navbar+小navbar的高*/
+}
+
+/* 點數區 banner 容器*/
+.point-section_banner_container {
+    width: 100%;
+    position: relative;
+}
+
+/* 點數區 banner 圖片大小*/
+.point-section_banner_container img {
+    width: 100%;
+}
+
+/* 點數區 banner slogan大小*/
+.point-section_banner_container h1 {
+    position: absolute;
+    left: 2.5%;
+    bottom: 10px;
+    white-space: nowrap;
+    color: white;
+}
+
+/* 點數區 說明一 (text container內)------------------------------------------- */
+/* 點數區 說明一 區塊 pad下 40px */
+.point-section_info_one {
+    width: 100%;
+    padding: 40px 0 40px 0;
+}
+
+/* 點數區 說明一 標題 pad下 40px */
+.point-section_info_title {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+/* 點數區 說明一 標題項目圖 */
+.point-section_info_title img {
+    width: 6px;
+    margin-right: 10px;
+}
+
+/* 點數區 說明一 標題文字 */
+.point-section_info_title h2 {
+    color: white;
+}
+
+/* 點數區 說明一 內文區塊為div 內有 p span */
+.point-section_info_text {
+    color: white;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.point-section_info_text span {
+    color: #F6BB42;
+}
+
+/* 點數區animation roll wrap 包了卡片介紹跟animate 用flexdirection切換 */
+.point-section-animate-wrap {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 點數區 說明 的animation roll */
+/* 點數區 說明 的animation roll img大小控制 */
+.point-section_animate_roll_train_imgwrap {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.point-section_animate_roll_train_imgwrap>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* 點數區 說明 的animation roll 100%外框 */
+.point-section_animate_roll {
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* 點數區 說明 的animation roll 動畫火車 */
+.point-section_animate_roll_train {
+    height: 20vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-shrink: 0;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.point-section_animate_roll_train.rollone {
+    animation-name: infinityrolling1;
+}
+
+.point-section_animate_roll_train.rolltwo {
+    animation-name: infinityrolling2;
+}
+
+@keyframes infinityrolling1 {
+    0% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+
+    49% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    51% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    52% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes infinityrolling2 {
+    0% {
+        transform: translateX(0%);
+        opacity: 0;
+    }
+
+    1% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+
+    99% {
+        transform: translateX(-200%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-200%);
+        opacity: 0;
+    }
+}
+
+/* 點數區塊一 桌機版的圖 消失 */
+.point-section_info_img {
+    display: none;
+}
+
+/* 點數區塊二 -------------------------------------------------- */
+/* 點數區塊二 wrap */
+.point-section_info_two {
+    width: 100%;
+}
+
+/* 點數區塊二 卡片的wrap */
+.point-section_info_cardwrap {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* 點數區塊二 卡片 */
+.point-section_info_card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* 點數區塊二 卡片內的圖的div */
+.point-section_info_card_imgwrap {
+    width: 55%;
+    padding: 20px;
+    position: relative;
+}
+
+.point-section_info_card_imganimation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.point-section_info_card_imgwrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* width: 100px; */
+}
+
+/* 點數區塊二 卡片內文字 */
+.point-section_info_card p {
+    width: 60%;
+    text-align: center;
+    color: white;
+}
+
+/* 點數區塊二 卡片內reverse */
+.point-section_info_card:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.point-section_info_card:nth-child(2) .point-section_info_card_imgwrap {
+    padding: 0 20px 0 0;
+}
+
+/* 點數區塊二 桌機版roll消失 */
+.point-section_animate_roll_fullsize {
+    display: none;
+}
+
+/* 點數區塊三  -------------------------------------------------- */
+/* 點數區塊三 開始放在text__container內了 */
+.point-section_info_three {
+    width: 100%;
+}
+
+/* 點數區塊三 title要變回100% */
+.point-section_info_three .point-section_info_title {
+    width: 100%;
+}
+
+/* 點數區塊三 手機版的大圖 */
+.point-section_info_numberpicphone {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.point-section_info_numberpicphone img {
+    width: 300px;
+}
+
+/* 點數區塊三 步驟卡片的wrap */
+.point-section_info_numbercardwrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 點數區塊三 步驟卡片 */
+.point-section_info_numbercard {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* 點數區塊三 步驟數字wrap */
+.point-section_info_numbercard_numwrap {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 點數區塊三 步驟數字*/
+.point-section_info_numbercard_numwrap img {
+    width: 40px;
+}
+
+/* 點數區塊三 步驟文字wrap */
+.point-section_info_card_pwrap {
+    width: 80%;
+    padding: 0 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* 點數區塊三 步驟文字 */
+.point-section_info_card_pwrap h2 {
+    width: 100%;
+    color: #F6BB42;
+    margin-bottom: 1rem;
+}
+
+/* 點數區塊三 步驟文字 */
+.point-section_info_card_pwrap p {
+    width: 100%;
+    color: white;
+}
+
+/* 點數區塊三 步驟圖片 消失 */
+.point-section_info_numberpic {
+    display: none;
+}
+
+/* 點數區塊三 大wrap margin 消失 */
+.point-section_info_numbercard_fullsize {
+    margin-bottom: 0;
+}
+
+/* ----------------------------------------------------------------------------------------
+桌機版
+------------------------ */
+
+@media screen and (min-width: 750px) {
+    /* .container{
+        padding-left: 64px;
+    } */
+    /* 大小改成60% */
+    .text__container.point_index_width-60_destkoponly {
+        width: 60%;
+    }
+
+    .point-section_info_title {
+        width: 60%;
+    }
+
+    .point-section_info_wrap {
+        width: 60%;
+    }
+
+    .point-section_info_cardwrap {
+        width: 60%;
+    }
+
+    /* 點數區 banner ------------------------------------------ */
+    /* 手機版消失 */
+    .p_web_d-none{
+        display: block;
+    }
+    .p_phone_d-none{
+        display: none;
+    }
+    .point-section_banner h1 {
+        font-size: 5rem;
+        bottom: 3rem;
+    }
+
+    /* 點數區塊一 為了圖片多包一層------------------------------------ */
+    .point-section_info_wrap {
+        margin: 0 auto;
+        display: flex;
+    }
+
+    /* 點數區塊一 把文字致中 */
+    .point-section_info_text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    /* 點數區塊一 桌機版圖片位置 */
+    .point-section_info_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    .point-section_info_img img {
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    /* 點數區塊一 animation 交換排列 */
+    .point-section-animate-wrap {
+        /* flex-direction: column-reverse; */
+    }
+
+    /* 點數區塊二 -------------------------------------------- */
+    /* 點數區塊二 卡片排版改變 */
+    .point-section_info_cardwrap {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* 點數區塊二 卡片致中 */
+    .point-section_info_card {
+        height: 20vh;
+        justify-content: center;
+    }
+
+    /* 點數區塊二 圖片大小改變 */
+    .point-section_info_card_imgwrap {
+        height: 100%;
+        padding: 0 20px 0 20px;
+    }
+
+    /* 點數區塊二 圖片大小改變 此區留給做動畫的時候 */
+    .point-section_info_card_imganimation {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* 點數區塊二 圖片大小改變 */
+    .point-section_info_card_imgwrap img {
+        /* width: 260px; */
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /* 點數區塊二 文字排版改變*/
+    .point-section_info_card p {
+        width: auto;
+    }
+
+    /* 點數區塊二 文字排版改變*/
+    .point-section_info_card:nth-child(2) {
+        flex-direction: row;
+    }
+
+    /* 點數區塊二 animation roll出現*/
+    /* .point-section_animate_roll_fullsize {
+        padding: 20px 0;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
+    } */
+
+    /* 點數區塊三 -------------------------------------------------*/
+    /* 點數區塊三 大圖消失*/
+    .point-section_info_numberpicphone {
+        display: none;
+    }
+
+    /* 點數區塊三 小圖們出現消失*/
+    .point-section_info_numbercard_fullsize {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    /* 點數區塊三 包card的大wrap*/
+    .point-section_info_numberpic {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .point-section_info_numberpic img {
+        width: 300px;
+    }
+
+    .point-section_info_numbercard_numwrap img {
+        width: 60px;
+    }
+
+    /* 點數區塊三 排版改變*/
+    .point-section_info_numbercard_fullsize:nth-child(1) .point-section_info_numbercard,
+    .point-section_info_numbercard_fullsize:nth-child(3) .point-section_info_numbercard {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    .point-section_info_numbercard_fullsize:nth-child(1) .point-section_info_numbercard .point-section_info_card_pwrap,
+    .point-section_info_numbercard_fullsize:nth-child(3) .point-section_info_numbercard .point-section_info_card_pwrap {
+        padding: 0 20px 0 0;
+    }
+
+    .point-section_info_card_pwrap {
+        width: auto;
+    }
+
+    .point-section_info_numbercard_fullsize:nth-child(2),
+    .point-section_info_numbercard_fullsize:nth-child(4) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .point-section_info_numbercard {
+        justify-content: flex-end;
+    }
+
+    /* 滑入function */
+    .p_slide-in{
+        transition: 1s;
+    }
+    .p_silde-l{
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+    .p_silde-r{
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    .p-slide-active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,387 @@
+/* cursor */
+body{
+    cursor: default;
+}
+.point-ce-section_coupon{
+    cursor: pointer;
+}
+/* nav------------------------------------------------- */
+.top_nav {
+    background-color: rgba(43, 44, 49, 0.993);
+}
+.point-mycp-section_row-one{
+    width: 100%;
+    margin: 146px auto 40px auto;
+    /* padding: 0 0 40px 0; */
+    position: relative;
+}
+
+.point-mycp-section_title{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.point-mycp-section_title-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.point-mycp-section_title > .point-mycp-section_title-left > img {
+    width: 6px;
+    margin-right: 10px;
+}
+
+.container{
+    /* padding-left: 64px; */
+    overflow-x: hidden;
+}
+/* 點數區 說明一 標題文字 */
+.point-mycp-section_title h2 {
+    color: white;
+}
+.point-mycp-section_title-right{
+    display: flex;
+}
+.point-mycp-section_title-right > p{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.point-mycp-section_card-roll-normal-wrap{
+    width: 100%;
+    overflow: hidden;
+}
+
+.point-mycp-section_card-roll-normal{
+    width: 100%;
+    scroll-behavior: smooth;
+    padding: 20px 0 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.point-mycp-section_card-roll-normal::-webkit-scrollbar{
+    display: none;
+}
+
+.point-ce-section_card-roll-limited::-webkit-scrollbar{
+    display: none;
+}
+
+.point-mycp-section_coupon-normal{
+    transition: .3s;
+}
+/* .point-mycp-section_coupon-normal > div{
+    transition: .3s;
+} */
+.point-mycp-section_coupon-normal:hover{
+    transform: scale(1.05);
+}
+/* .point-mycp-section_coupon-normal:hover > div{
+    background-color: #10FFA2;
+} */
+
+.point-mycp-section_coupon-normal{
+    width: 50%;
+    height: 260px;
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+.point-mycp-section_coupon-normal-content-wrap{
+    width: 100%;
+    height: 100%;
+    background-color: #24252A;
+    padding: 12px 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.point-mycp-section_coupon-normal-img{
+    width: 85%;
+    height: 150px;
+    border-radius: 10px;
+    padding: 10px 2px;
+    background-color: #3C3C3C;
+    flex-shrink: 0;
+}
+.point-mycp-section_coupon-normal-img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.point-mycp-section_coupon-normal-content{
+    margin-top: 4px;
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.point-mycp-section_coupon-normal-content-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.point-mycp-section_coupon-normal-content-type{
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+}
+.point-mycp-section_coupon-normal-content-type >img{
+    width: 16px;
+    margin-right: 4px;
+}
+
+.point-mycp-section_coupon-normal-content-quantity{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.point-mycp-section_coupon-normal-content-quantity > div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.point-mycp-section_coupon-normal-content-quantity > div > img {
+    width: 14px;
+    margin-right: 4px;
+}
+.point-mycp-section_coupon-normal-content-quantity p > span {
+    color: #F6BB42;
+    font-size: 1.4rem;
+}
+
+.point-mycp-section_card-roll-normal-arrow{
+    width: 20px;
+    height: 300px;
+    position: absolute;
+    bottom: 0px;
+    right: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.point-mycp-section_card-roll-normal-arrow i{
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* 光香-------------------------------------------------------------------------------------------------- */
+.point-mycp-section_light-box{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(35, 36, 41, 0.95);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.point-section_coupon-detail-card{
+    width: 90%;
+    height: 50vh;
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid #F6BB42;
+    background-color: #24252A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.point-section_coupon-detail-card-title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 10px;
+}
+.point-section_coupon-detail-card-title-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.point-section_coupon-detail-card-title-left > h2 {
+    margin-bottom: 10px;
+}
+.point-section_coupon-detail-card-title-left > div{
+    display: flex;
+    align-items: center;
+}
+.point-section_coupon-detail-card-title-left > div > img{
+    width: 20px;
+    margin-right: 10px;
+}
+.point-section_coupon-detail-card-title-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 45%;
+}
+.point-section_coupon-detail-card-title-right > div > img{
+    width: 30px;
+    margin-right: 10px;
+}
+.point-section_coupon-detail-card-title-right > div > p > span {
+    color: #F6BB42;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.point-section_coupon-detail-card-code{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #10FFA2;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.point-section_coupon-detail-card-code > .point-section_coupon-detail-card-code-wrap{
+    /* for js德 */
+    all: unset;
+}
+.point-section_coupon-detail-card-code > .point-section_coupon-detail-card-code-wrap > h2{
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.point-section_coupon-detail-card-coupunimg{
+    width: 100%;
+}
+.point-section_coupon-detail-card-coupunimg > img{
+    width: 100%;
+}
+.point-section_coupon-detail-card-notice{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.point-section_coupon-detail-card-notice > p:nth-child(1){
+    color: white;
+}
+.point-section_coupon-detail-card-notice > p:nth-child(2){
+    color: rgba(255, 255, 255, 0.5);
+}
+.point-section_coupon-detail-card-changenow{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.point-section_coupon-detail-card-changenow > p{
+    color: white;
+    margin-bottom: 4px;
+}
+.point-section_coupon-detail-card-changenow > button{
+    all: unset;
+    width: 70%;
+    padding: 10px;
+    background-color: #10FFA2;
+    border-radius: 10px;
+}
+.point-section_coupon-detail-card-changenow > button > h2{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.point-section_coupon-detail-card-changesuccess{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.point-section_coupon-detail-card-changesuccess > img{
+    width: 60px;
+    margin-bottom: 10px;
+}
+.point-section_coupon-detail-card-changesuccess > h2{
+    color: white;
+    margin-bottom: 10px;
+
+}
+.point-section_coupon-detail-card-changesuccess > p{
+    color: white;
+    margin-bottom: 40px;
+}
+.point-section_coupon-detail-card-changesuccess > button{
+    all: unset;
+    width: 70%;
+    background-color: #10FFA2;
+    border-radius: 10px;
+    padding: 10px;
+}
+.point-section_coupon-detail-card-changesuccess > button >h2{
+    text-align: center;
+}
+
+/* RWD ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+@media screen and (min-width: 750px) {
+    /* ott一般優惠券桌機版 --------------------------------*/
+    .point-mycp-section_card-roll-normal-wrap{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .point-mycp-section_card-roll-normal{
+        flex-wrap: wrap;
+        /* margin: 0 -10px 0 -10px; */
+    }
+
+    .point-mycp-section_coupon-normal{
+        margin-bottom: 40px;
+        width: 20%;
+        height: 460px;
+        padding: 10px;
+    }
+
+    .point-mycp-section_coupon-normal-content-wrap{
+        padding: 24px 0;
+        justify-content: center;
+    }
+
+    .point-mycp-section_coupon-normal-img{
+        height: 280px;
+    }
+    .point-mycp-section_coupon-normal-content{
+        margin-top: 14px;
+    }
+    .point-mycp-section_coupon-normal-content-type{
+        margin-top: 10px;
+    }
+    .point-mycp-section_card-roll-normal-arrow{
+        display: none;
+    }
+
+    /* 光香--------------------------------------------------------------- */
+    .point-section_coupon-detail-card{
+        width: 40%;
+        height: 60vh;
+        padding: 60px;
+    }
+    .point-section_coupon-detail-card-title{
+        margin-bottom: 20px;
+    }
+    .point-section_coupon-detail-card-code{
+        margin-bottom: 20px;
+    }
+    .point-section_coupon-detail-card-notice{
+        margin-bottom: 20px;
+    }
+    .point-section_coupon-detail-card-changenow > p{
+        color: white;
+        margin-bottom: 10px;
+    }
+}

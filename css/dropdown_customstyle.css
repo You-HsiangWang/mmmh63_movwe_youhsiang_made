@@ -1,0 +1,72 @@
+/* 需要配合./js/dropdown_customstyle.js一起使用 */
+/* 需要再select外包一層div classname叫做 .custom-select 且必須為relative*/
+/* The container must be positioned relative: */
+.custom-select {
+    position: relative;
+    /* font-family: Arial; */
+    width: 160px;
+    /* 記得下個大小建議下在行內避免被蓋掉 目前為手機版大小 */
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element: */
+}
+
+.select-selected {
+    background-color: #10FFA2;
+    border-radius: 10px;
+}
+
+.select-selected.select-arrow-active{
+    border-radius: 10px 10px 0 0;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected::after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #1A1D24 transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #1A1D24 transparent;
+    top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+    color: #1A1D24;
+    padding: 8px 16px;
+    border: 1px solid #10FFA2;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: #10FFA2;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}

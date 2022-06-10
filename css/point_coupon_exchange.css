@@ -1,0 +1,639 @@
+/* cursor */
+body{
+    cursor: default;
+}
+.point-ce-section_coupon{
+    cursor: pointer;
+}
+/* nav------------------------------------------------- */
+.top_nav {
+    background-color: rgba(43, 44, 49, 0.993);
+}
+.container{
+    /* padding-left: 64px; */
+    overflow-x: hidden;
+}
+/* 限量優惠券 -------------------------------------------------------------------------------------------- */
+/* 第一個row 滿版的 */
+.point-ce-section_row-one {
+    width: 100%;
+    margin: 146px auto 40px auto;
+    /* padding: 0 0 40px 0; */
+    position: relative;
+}
+
+.point-cs-section_title{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.point-cs-section_title-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.point-cs-section_title-right{
+    display: none;
+    cursor: pointer;
+}
+.point-cs-section_title-right > button {
+    all: unset;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 0.5);
+}
+.point-cs-section_title-right > button > p{
+    margin-right: 10px;
+}
+.point-cs-section_title-right > button > img{
+    transition: .3s;
+    transform: rotate(90deg);
+}
+
+/* 點數區 說明一 標題項目圖 */
+.point-cs-section_title > .point-cs-section_title-left > img {
+    width: 6px;
+    margin-right: 10px;
+}
+
+/* 點數區 說明一 標題文字 */
+.point-cs-section_title h2 {
+    color: white;
+}
+
+.point-ce-section_card-roll-limited-wrap{
+    width: 100%;
+    overflow: hidden;
+    /* background-color: rgba(16, 255, 163); */
+    background-color: #F6BB42;
+}
+
+.point-ce-section_card-roll-limited{
+    width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 20px 0 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.point-ce-section_card-roll-limited::-webkit-scrollbar{
+    display: none;
+}
+
+.point-ce-section_coupon{
+    transition: .3s;
+}
+/* .point-ce-section_coupon > div{
+    transition: .3s;
+} */
+.point-ce-section_coupon:hover{
+    transform: scale(1.05);
+}
+/* .point-ce-section_coupon:hover > div{
+    background-color: #10FFA2;
+} */
+
+.point-ce-section_coupon-limited{
+    width: 100%;
+    /* height: 190px; */
+    padding: 10px;
+    /* margin-right: 20px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    /* background-color: #7698BD; */
+    /* background-image: url(../img/discount/limited.svg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    /* box-shadow: #5E7B9B 0 3px 3px; */
+}
+.point-ce-section_coupon-limited:last-child{
+    /* margin-right: 0px; */
+}
+
+.point-ce-section_coupon-limited-bgi{
+    position: relative;
+    width: 331px;
+    height: 175px;
+}
+.point-ce-section_coupon-limited-bgi>img:nth-child(1){
+    width: 331px;
+}
+.point_coupon_cant_change{
+    filter: brightness(70%);
+    pointer-events: none;
+}
+.point-ce-section_coupon-limited-bgi>img:nth-child(2){
+    width: 107px;
+    position: absolute;
+    top: -8px;
+    left: -10px;
+}
+.point-ce-section_coupon-limited-bgi>img:nth-child(3){
+    width: 55px;
+    position: absolute;
+    right: -28px;
+    top: -24px;
+}
+.point-ce-section_coupon-limited-bgi>img:nth-child(4){
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 97;
+    display: none;
+}
+
+.point-ce-section_coupon-limited-content-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.point-ce-section_coupon-limited-img{
+    width: 50%;
+    height: 100%;
+    padding: 10px 10px 10px 8px;
+    margin: 0 10px;
+    position: relative;
+}
+.point-ce-section_coupon-limited-img #cpCantChange{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+}
+.point-ce-section_coupon-limited-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.point-ce-section_coupon-limited-img > img:nth-child(2){
+    display: none;
+}
+
+.point-ce-section_coupon-limited-content{
+    width: 50%;
+    height: 100%;
+    padding: 26px 20px 24px 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.point-ce-section_coupon-limited-content-type{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+.point-ce-section_coupon-limited-content-name{
+    font-size: 1.5rem;
+}
+.point-ce-section_coupon-limited-content-type img{
+    width: 16px;
+    margin-right: 4px;
+}
+
+.point-ce-section_coupon-limited-content-quantity{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.point-ce-section_coupon-limited-content-quantity > div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.point-ce-section_coupon-limited-content-quantity img{
+    width: 16px;
+    margin-right: 4px;
+}
+.point-ce-section_coupon-limited-content p>span{
+    color: #F6BB42;
+    font-size: 1.5rem;
+}
+
+.point-ce-section_card-roll-limited-arrow{
+    width: 20px;
+    height: 235px;
+    position: absolute;
+    bottom: 0px;
+    right: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(to right, rgba(255,255,255,.5) 0%, rgba(26,29,36,0.1) 100%); */
+}
+.point-ce-section_card-roll-limited-arrow i{ 
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ott 一般優惠券 ----------------------------------------------------------------------------------------*/
+.point-ce-section_row-two{
+    width: 100%;
+    margin: 0px auto 40px auto;
+    /* padding: 0 0 40px 0; */
+    position: relative;
+}
+
+.point-ce-section_card-roll-normal-wrap{
+    width: 100%;
+    overflow: hidden;
+}
+
+.point-ce-section_card-roll-normal{
+    width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 20px 0 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.point-ce-section_card-roll-normal::-webkit-scrollbar{
+    display: none;
+}
+
+.point-ce-section_coupon-normal{
+    width: 50%;
+    height: 260px;
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+.point-ce-section_coupon-normal-content-wrap{
+    width: 100%;
+    height: 100%;
+    background-color: #24252A;
+    padding: 12px 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.point-ce-section_coupon-normal-img{
+    width: 85%;
+    height: 150px;
+    border-radius: 10px;
+    padding: 10px 2px;
+    background-color: #3C3C3C;
+    flex-shrink: 0;
+    position: relative;
+}
+.point-ce-section_coupon-normal-img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.point-ce-section_coupon-normal-img > img:nth-child(2){
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.point-ce-section_coupon-normal-content{
+    margin-top: 4px;
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.point-ce-section_coupon-normal-content-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.point-ce-section_coupon-normal-content-type{
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+}
+.point-ce-section_coupon-normal-content-type >img{
+    width: 16px;
+    margin-right: 4px;
+}
+
+.point-ce-section_coupon-normal-content-quantity{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.point-ce-section_coupon-normal-content-quantity > div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.point-ce-section_coupon-normal-content-quantity > div > img {
+    width: 14px;
+    margin-right: 4px;
+}
+.point-ce-section_coupon-normal-content-quantity p > span {
+    color: #F6BB42;
+    font-size: 1.4rem;
+}
+
+.point-ce-section_card-roll-normal-arrow{
+    width: 20px;
+    height: 300px;
+    position: absolute;
+    bottom: 0px;
+    right: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.point-ce-section_card-roll-normal-arrow i{
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* 商城優惠券左右滑動 ----------------------------------------------------------------------------------- */
+.point-ce-section_row-three{
+    width: 100%;
+    margin: 0px auto 40px auto;
+    /* padding: 0 0 40px 0; */
+    position: relative;
+}
+
+/* 光香-------------------------------------------------------------------------------------------------- */
+.point-ce-section_light-box{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(35, 36, 41, 0.95);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.point-section_coupon-detail-card{
+    width: 90%;
+    height: 50vh;
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid #F6BB42;
+    background-color: #24252A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.point-section_coupon-detail-card-title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 10px;
+}
+.point-section_coupon-detail-card-title-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.point-section_coupon-detail-card-title-left > h2 {
+    margin-bottom: 10px;
+}
+.point-section_coupon-detail-card-title-left > div{
+    display: flex;
+    align-items: center;
+}
+.point-section_coupon-detail-card-title-left > div > img{
+    width: 20px;
+    margin-right: 10px;
+}
+.point-section_coupon-detail-card-title-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 45%;
+}
+.point-section_coupon-detail-card-title-right > div > img{
+    width: 30px;
+    margin-right: 10px;
+}
+.point-section_coupon-detail-card-title-right > div > p > span {
+    color: #F6BB42;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.point-section_coupon-detail-card-code{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #10FFA2;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.point-section_coupon-detail-card-code > .point-section_coupon-detail-card-code-wrap{
+    /* for js德 */
+    all: unset;
+}
+.point-section_coupon-detail-card-code > .point-section_coupon-detail-card-code-wrap > h2{
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.point-section_coupon-detail-card-coupunimg{
+    width: 100%;
+}
+.point-section_coupon-detail-card-coupunimg > img{
+    width: 100%;
+}
+.point-section_coupon-detail-card-notice{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.point-section_coupon-detail-card-notice > p:nth-child(1){
+    color: white;
+}
+.point-section_coupon-detail-card-notice > p:nth-child(2){
+    color: rgba(255, 255, 255, 0.5);
+}
+.point-section_coupon-detail-card-changenow{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.point-section_coupon-detail-card-changenow > p{
+    color: white;
+    margin-bottom: 4px;
+}
+.point-section_coupon-detail-card-changenow > button{
+    all: unset;
+    width: 70%;
+    padding: 10px;
+    background-color: #10FFA2;
+    border-radius: 10px;
+}
+.point-section_coupon-detail-card-changenow > button > h2{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.point-section_coupon-detail-card-changesuccess{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.point-section_coupon-detail-card-changesuccess > img{
+    width: 60px;
+    margin-bottom: 10px;
+}
+.point-section_coupon-detail-card-changesuccess > h2{
+    color: white;
+    margin-bottom: 10px;
+
+}
+.point-section_coupon-detail-card-changesuccess > p{
+    color: white;
+    margin-bottom: 40px;
+}
+.point-section_coupon-detail-card-changesuccess > button{
+    all: unset;
+    width: 70%;
+    background-color: #10FFA2;
+    border-radius: 10px;
+    padding: 10px;
+}
+.point-section_coupon-detail-card-changesuccess > button >h2{
+    text-align: center;
+}
+/* RWD ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+@media screen and (min-width: 750px) {
+    .point-cs-section_title-right{
+        display: flex;
+        cursor: pointer;
+    }
+    .point-ce-section_card-roll-limited{
+        width: 95%;
+        margin: 0 auto;
+        padding: 40px 0 40px 0;
+        overflow-x: hidden;
+    }
+    .point-ce-section_coupon-limited{
+        width: 33.33%;
+    }
+    .point-ce-section_coupon-limited-bgi{
+        position: relative;
+        width: 496.5px;
+        height: 262.5px;
+    }
+    .point-ce-section_coupon-limited-bgi>img:nth-child(1){
+        width: 496.5px;
+    }
+    .point-ce-section_coupon-limited-bgi>img:nth-child(2){
+        width: 160.5px;
+        position: absolute;
+        top: -12px;
+        left: -15px;
+    }
+    .point-ce-section_coupon-limited-bgi>img:nth-child(3){
+        width: 82.5px;
+        position: absolute;
+        right: -42px;
+        top: -36px;
+    }
+    .point-ce-section_card-roll-limited-arrow{
+        display: none;
+    }
+
+    /* ott一般優惠券手機版 --------------------------------*/
+    .point-ce-section_card-roll-normal-wrap{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .point-ce-section_card-roll-normal{
+        overflow-x: hidden;
+        flex-wrap: wrap;
+        /* margin: 0 -10px 0 -10px; */
+    }
+
+    .point-ce-section_coupon-normal{
+        margin-bottom: 40px;
+        width: 20%;
+        height: 460px;
+        padding: 10px;
+    }
+
+    .point-ce-section_coupon-normal-content-wrap{
+        padding: 24px 0;
+        justify-content: center;
+    }
+
+    .point-ce-section_coupon-normal-img{
+        height: 280px;
+    }
+    .point-ce-section_coupon-normal-content{
+        margin-top: 14px;
+    }
+    .point-ce-section_coupon-normal-content-type{
+        margin-top: 10px;
+    }
+    .point-ce-section_card-roll-normal-arrow{
+        display: none;
+    }
+
+    /* 光香--------------------------------------------------------------- */
+    .point-section_coupon-detail-card{
+        width: 40%;
+        height: 60vh;
+        padding: 60px;
+    }
+    .point-section_coupon-detail-card-title{
+        margin-bottom: 20px;
+    }
+    .point-section_coupon-detail-card-code{
+        margin-bottom: 20px;
+    }
+    .point-section_coupon-detail-card-notice{
+        margin-bottom: 20px;
+    }
+    .point-section_coupon-detail-card-changenow > p{
+        color: white;
+        margin-bottom: 10px;
+    }
+}

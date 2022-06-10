@@ -1,0 +1,1061 @@
+/* .account_children_films, .account_children_account{
+    display: none;
+}  */
+
+
+.text__container{
+    margin: 0px 20px;
+    overflow: visible;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.flex-shrink {
+    flex-shrink: 1;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #fff;
+}
+
+p,
+span {
+    color: #ffffff80;
+    /* font-size: 1.2rem; */
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+.w-100{
+    width: 100%;
+}
+
+
+/* ---------account------------ */
+.account_filter_word li{
+    cursor: pointer;
+}
+.info_child_content li{
+    cursor: pointer;
+}
+.account{
+    /* outline: 1px solid red; */
+    padding-top: 72px;
+    color: #FFFFFD;
+    display: flex;
+    justify-content: space-between;
+}
+.account-left{
+    display: flex;
+}
+.account-right{
+    display: flex;
+    align-items: center;
+}
+.account-myPoint{
+    display: flex;
+    align-items: center;
+}
+.account-info, .account-line, .account-myMovie, .account-myPost, .account span{
+    display: none;
+}
+.account-pic{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    overflow: hidden;
+    margin-right: 5px;
+    
+}
+.account-pic img{
+    width: 100%;
+    
+}
+.account-name{
+    font-size: 24px;
+}
+.account-myPoint{
+    display: flex;
+    font-size: 12px;
+    margin-right: 8px;
+}
+.account-myPoint-logo{
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+}
+.account-myPoint-logo img{
+    width: 100%;
+}
+.account-pointExchange{
+    background-color: #10FFA2;
+    border: none;
+    border-radius: 25px;
+    padding: 4px 7.5px;
+    cursor: pointer;
+}
+
+/* ---------account-nav------------ */
+
+.account-nav{
+    font-size: 14px;
+    margin-top: 24px;
+}
+.account-nav a{
+    color: rgba(255, 255, 253, 0.5);
+    text-decoration: none;
+}
+.account-nav li{
+    list-style: none;
+}
+
+.account_filter_word{
+    display: flex;
+    justify-content: space-between;
+}
+.account_underline{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 253, 0.5);
+    margin-top: 3px;
+}
+
+.account_films, .account_product, .account_forum, .account_info{
+    border-bottom: 1px solid rgba(255, 255, 253, 0);
+    transform: translateY(4px);
+    padding: 0px 15px;
+}
+.account_films:hover a{
+    color: #10FFA2;
+}
+.account_films:hover{
+    border-bottom: 1px solid #10FFA2;
+}
+.account_product:hover a{
+    color: #10FFA2;
+}
+.account_product:hover{
+    border-bottom: 1px solid #10FFA2;
+}
+.account_forum:hover a{
+    color: #10FFA2;
+}
+.account_forum:hover{
+    border-bottom: 1px solid #10FFA2;
+}
+.account_info:hover a{
+    color: #10FFA2;
+}
+.account_info:hover{
+    border-bottom: 1px solid #10FFA2;
+}
+.info_child_content{
+    color: rgba(255, 255, 253, 0.5);
+    list-style: none;
+    display: flex;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 24px;
+}
+.info_child_content span{
+    margin-right: 16px;
+    font-size: 14px;
+    display: none;
+}
+.info_child_content a{
+    text-decoration: none;
+    color: rgba(255, 255, 253, 0.5);
+    font-size: 14px;
+}
+.info_child_content li{
+    margin-right: 10px;
+}
+.account_children{
+    color: #FFFFFD;
+}
+.info_acc_title{
+    display: flex;
+    font-size: 14px;
+    margin-top: 24px;
+}
+.acc_input{
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 253, 0.5);
+    background-color: #24252A;
+    width: 350px;
+    height: 30px;
+    padding-left: 5px;
+    color: #FFFFFD;
+}
+.info_upload_square{
+    width: 200px;
+    height: 200px;
+    background-color: #24252A;
+    border: 1px solid rgba(255, 255, 253, 0.5);    
+}
+.info_upload{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info_gen_img{
+    width: 198px;
+    height: 198px;
+    border-radius: 200px;
+    overflow: hidden;
+}
+.info_gen_img img{
+    width: 100%;
+}
+.up_accpic, .info_save{
+    background-color:#10FFA2;
+    border: none;
+    width: 124px;
+    height: 40px;
+    border-radius: 40px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.info_gen03 input{
+    height: 120px;
+}
+.info_acc_email, .info_acc_change{
+    font-size: 12px;
+    margin-top: 24px;
+}
+.acc_email_title{
+    margin-bottom: 24px;
+}
+.info_acc_chPW{
+    margin-bottom: 12px;
+}
+.info_acc_change a{
+    text-decoration: none;
+    color: #10FFA2;
+}
+.info_gen01, .info_gen02{
+    margin-top: 24px;
+}
+.info_upload, .info_gen03{
+    margin-top: 12px;
+}
+.info_gen_nickname, .info_gen_intro{
+    margin-bottom: 6px;
+}
+.info_gen04{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+.up_accpic, .info_save{
+    color: black;
+    transition: .1s;
+}
+.up_accpic:hover, .info_save:hover
+{
+    transform: scale(1.05);
+    opacity: .8;
+}
+/* ----許願池-- */
+#myWishList{
+    margin: 0px 5px;
+}
+.info_acc_title{
+    margin-bottom: 40px;
+}
+.wishcard{
+    display: flex;
+    margin-bottom: 24px;
+}
+.wish_words{
+    width: 48%; 
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.wish_pic{
+    width: 174px;
+    height: 112px; 
+    overflow: hidden;
+    border-radius: 7px
+}
+.wish_pic img{
+    width: 100%;
+    border-radius: 7px;
+}
+.wish_word_top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;
+}
+.wish_type{
+    color: #FC6F51;
+    font-size: 12px;
+    border: 1px solid #FC6F51;
+    padding: 3px 4px;
+    line-height: 18px;
+    /* width: 18%; */
+    text-align: center;
+    border-radius: 5px;
+}
+.wish_icon{
+    width: 20px;
+    height: 20px;
+}
+.wish_word_middle{
+    font-size: 14px;
+}
+.wish_word_bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.wish_total{
+    width: 100%;
+    height: 8px;
+    border-radius: 8px;
+    background-color: #3C3C3C;
+    position: relative;
+    box-shadow: inset 0 1px 2px #3c3c3c34, 0 1px #3c3c3c17;
+    
+    
+}
+.wish_people{
+    position: absolute;
+    height: 8px;
+    border-radius: 8px;
+    background-color:rgb(209, 178, 102);
+    top: 0px;
+    left: 0px;
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+
+}
+
+.progress-striped .wish_people {
+    background-color: #10FFA2;
+    width: 100%;
+    background-image: linear-gradient(45deg, #4ff9b8 25%, transparent 25%, transparent 50%, #4ff9b8 50%, #4ff9b8 75%, transparent 75%, transparent);
+    animation: runrunani 6s;
+    
+}
+   
+.wish_vote{
+    font-size: 12px;
+    margin-top: 5px;
+}
+.wish_btn{
+    background-color:#fc705100;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+/* 預約上片 */
+.flim_timeline{
+    width: 110px;
+    height: 2px;
+    background-color: #FFFFFD;
+}
+.timeline_ball{
+    width: 110px;
+}
+.dot-ball{
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    background-color: #10FFA2;
+    border-radius: 10px;
+}
+.timeline_word{
+    width: 110px;
+    text-align: center;
+    margin-top: 8px;
+    
+}
+.timeline-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.release-time{
+    transform: translateY(-6px);
+}
+.booking-timeline{
+    display: flex;
+    width: 370px;
+    justify-content: space-between;
+}
+.timeline-back{
+    width: 330x;
+    height: 2px;
+    background-color: #FFFFFD;
+    transform: translateY(2px);
+}
+/* 片單 */
+.mweb{
+    display: none;
+}
+.actor_flims{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.actor_flim{
+    margin-bottom: 32px;
+    margin-right: 13px;
+}
+.ac_flim_pic{
+    width: 110px;
+    height: 146px;
+}
+.ac_flim_pic img{
+    width: 100%;
+    border-radius: 5px;
+}
+.ac_flim_name{
+    margin-top: 18px;
+    /* outline: 1px solid red; */
+    color: #FFFFFD;
+    font-size: 12px;
+    width: 110px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.information__name{
+    width: 210px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.ac_ott{
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+    /* outline: 1px solid red; */
+}
+.ac_netflix, .ac_iqiyi, .ac_kktv, .ac_friday{
+    width: 20px;
+    height: 20px;
+    /* outline: 1px solid red; */
+    margin-right: 4px;
+}
+.ac_netflix img{
+ width: 104.8%;
+}
+
+/* 文章 */
+.too_long{
+    display : inline-block;
+    overflow : hidden;
+    text-overflow : ellipsis;
+    white-space : nowrap;
+    width : 220px;
+}
+.short-one{
+    height: 3px;
+}
+.appear{
+    display: none;
+}
+.art-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.art-card-check, .art-card-checked{
+    width: 5%;
+    margin-bottom: 25px;
+}
+.art-card{
+    margin: auto;
+    
+}
+.card-article{
+    width: 95%;
+}
+.art-setting, .art-trash, .art-ch{
+        background-color:#fc705100;
+        border: 1px solid transparent;
+        cursor: pointer;
+}
+
+.myArtCollect-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.left__container ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-article ul li a {
+    color: #ffffff80;
+}
+
+.left-member-img-wrap {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.left-member-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+input {
+    width: 100%;
+    height: 30px;
+}
+
+svg {
+    margin-right: 5px;
+}
+
+.d-filter {
+    color: #1CD8FF;
+    border: 1px solid #1CD8FF;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+/* 文章作者圖片 */
+
+.ar-img-wrap {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.ar-img-wrap img{
+    width: 100%;
+}
+ul.ar-filter li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-article {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffffff80;
+}
+
+/* 文章ㄉ圖片 */
+
+.card-img-wrap {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-img-wrap img {
+    width: 100%;
+}
+.card-article .filter_4w,.card-article .filter_3w{
+    border: none;
+}
+.art-hash{
+    margin-left: -10px;
+    margin-bottom: 8px;
+}
+.art-hash .ml-10{
+    margin-left: -10px;
+}
+.posticon-hashtag{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.art-title{
+    font-size: 14px;
+}
+
+/* 商城 */
+.order_tit{
+    background-color: #FEB73A;
+    color: #1A1D24;
+    font-weight: bolder;
+}
+.account-order-table thead{
+    text-align:left;
+}
+.account-order-table a{
+    color: #10FFA2;
+}
+table{
+    border-collapse: collapse;
+    margin: auto;
+    width: 100%;
+}
+tr{
+    font-size: 14px;
+}
+table, th, td{
+    border: 1px solid rgba(255, 255, 255, 0.5)
+}
+th, td{
+    padding: 10px 10px;
+}
+
+/* 訂單明細 */
+.orderDetail-table-1 thead{
+    display: none ;
+}
+
+.orderDetail-table-1 td{
+    display: block;
+    padding: 15px 10px;
+    font-size: 12px;
+}
+.orderDetail-table-1 td:before{
+    content: attr(data-title);
+    display: inline-block;
+    width: auto;
+    min-width: 20%;
+    padding-right: 1rem;
+}
+
+/* 訂單明細--訂單細節 */
+.orderDetail-table-2{
+    text-align: center;
+}
+.od-product{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.orderDetail-table-2 th{
+    border: 1px solid rgba(255, 255, 255, 0.5)
+}
+
+.gw{
+    color: #10FFA2;
+}
+.od-btn{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    padding: 8px 15px;
+}
+/* .orderDetail-btn a{
+    color: #FC6F51;
+} */
+.od-pc{
+    display: none;
+}
+.od-mweb tr{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+}
+
+.od-pic{
+    margin-right: 28px;
+    width: 100px;
+    height: 100%;
+}
+.od-pic img{
+    width: 100%;
+}
+.od-left{
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+}
+.od-right{
+    border: 1px solid transparent;
+    text-align: center;
+}
+.od-nam, .od-col, .od-size, .od-quantity, .od-price{
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+
+/* ---PC版--------------------------- */
+@media screen and (min-width: 750px) {
+    .account-info, .account-line, .account-myMovie, .account-myPost, .account span{
+        display:block;
+    }
+    .account{
+        flex-direction: column;
+        align-items: flex-start;
+        /* outline: 1px solid red; */
+        padding-top: 0px;
+        margin-top: 110px;
+        width: 30%;
+    }
+    .account-left{
+        flex-direction: column;
+        align-items: center;
+    }
+    .account-pic{
+        width: 270px;
+        height: 270px;
+        border-radius: 270px;
+    }
+    .account-name, .account-info, .account-myPost{
+        margin-top: 16px;
+    }
+    .account-line{
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .account-info{
+        line-height: 28px;
+    }
+    .account-info, .account-myMovie, .account-myPost, .account-right{
+        width: 270px;
+        text-align: center;
+    }
+    .account-line{
+        width: 270px;
+        height: 1px;
+        background-color: rgba(255, 255, 253, 0.5);
+    }
+    .account-right{
+        flex-direction: column;
+        margin-top: 48px;
+        justify-content: center;
+    }
+    .account-myPoint{
+        margin-right: 0px;
+    }
+    .account-pointExchange{
+        color: black;
+        margin-top: 24px;
+        transition: .1s;
+    }
+    .account-pointExchange:hover
+    {
+        transform: scale(1.05);
+        opacity: .8;
+    }
+    .account-myPoint span{
+        display: none;
+    }
+    .account-myPoint-logo{
+        width: 35px;
+        height: 35px;
+    }
+    .account-myPoint-logo img{
+        width: 100%;
+    }
+    .account-container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 80px;
+
+    }
+    .account-pc-right{
+       width: 70%;
+        margin-top: 80px;
+    }
+    .account_children{
+        width: 80%;
+    }
+    .acc_input{
+        width: 99%;
+    }
+    .account_filter_word{
+        font-size: 24px;
+    }
+    .info_child_content{
+        align-items: baseline;
+    }
+    .info_child_content span{
+        display: block;
+    }
+    .info_acc_title{
+        font-size: 24px;
+        align-items: center;
+    }
+    .stick_mobile{
+        width: 10px;
+        height: 40px;
+        margin-right: 10px;
+    }
+    .info_acc_word{
+        padding-bottom: 3px;
+    }
+    
+    .info_acc_email, .info_acc_change, .child-inner{
+        font-size: 14px;
+    }
+    .account-info, .account-myMovie, .account-myPost, .account-right, .account-myPoint{
+        font-size: 14px;
+    }
+    .account-pointExchange{
+        background-color:#10FFA2;
+        border: none;
+        width: 124px;
+        height: 40px;
+        border-radius: 40px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    /* 許願 */
+    .wishlist_cards{
+        margin: auto;
+    }
+    .wish_words{
+        width: 60%;
+    }
+    .wish_type{
+        width: 10%;
+    }
+    /* 片單 */
+    .actor_flims{
+        width: 1100px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .ac_flim_pic{
+        width: 200px;
+        height: 280px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .ac_flim_name{
+        font-size: 14px;
+        margin-top: 5px;
+        width: 190px;
+        overflow:hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .ac_ott{
+        width: 100%;
+        display: flex;
+        margin-top: 5px;
+        /* outline: 1px solid red; */
+    }
+    
+    .ac_netflix, .ac_iqiyi, .ac_kktv, .ac_friday{
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+    }
+    /* 預約上片 */
+    .mweb{
+        display: block;
+    }
+    .flim_timeline{
+        width: 200px;
+        height: 2px;
+        background-color: #FFFFFD;
+    }
+    .timeline_ball{
+        width: 200px;
+    }
+    .dot-ball{
+        margin: auto;
+        width: 10px;
+        height: 10px;
+        background-color: #10FFA2;
+        border-radius: 10px;
+    }
+    .timeline_word{
+        width: 200px;
+        text-align: center;
+        margin-top: 8px;
+        
+    }
+    .timeline-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .release-time{
+        transform: translateY(-5px);
+    }
+    .booking-timeline{
+        display: flex;
+        width: 1100px;
+        justify-content: space-between;
+    }
+    .timeline-back{
+        width: 1100px;
+        height: 2.5px;
+        background-color: #FFFFFD;
+        transform: translateY(2px);
+    }
+ 
+    /* 文章 */
+    .too_long{
+
+        width : 720px;
+    }
+    .posticon-hashtag{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .card-article .filter_4w,.card-article .filter_3w{
+        border: 1px solid rgb(107, 107, 107);
+    }
+    .card-article .ml-10{
+        margin-left: 10px;
+    }
+    .art-hash{
+        margin-left: 100px;
+        margin-bottom: 0px;
+    }
+    .art-hash .ml-10{
+        margin-left: 10px;
+    }
+    .art-title{
+        font-size: 20px;
+    }
+
+    /* 商城 */
+    .order_tit{
+        background-color: #feb63a00;
+        color: #FFFFFD;
+        font-weight: bolder;
+    }
+    .od-mweb{
+        display: none;
+    }
+    .od-btn{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 24px;
+    }
+    .od-pc tr{
+        border: 1px solid rgba(167, 5, 5, 0)
+    }
+    .od-pc td{
+        border: 1px solid rgba(167, 5, 5, 0)
+    }
+    .od-pc{
+        display: table;
+    }
+    .od-mweb{
+        display:none;
+    }
+    
+}
+
+/* 訂單 */
+    @media only screen and (max-width:750px){
+        table{
+            width: 100%;
+        }
+        thead{
+            display: none ;
+        }
+        
+        .account-order-table td{
+            display: block;
+            padding: 15px 10px;
+            font-size: 12px;
+        }
+        .account-order-table td:before{
+            content: attr(data-title);
+            display: inline-block;
+            width: auto;
+            min-width: 20%;
+            padding-right: 1rem;
+        }
+        
+
+    }

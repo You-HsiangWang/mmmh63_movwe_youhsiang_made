@@ -1,0 +1,1359 @@
+/* color */
+body {
+    color: white;
+    cursor: default;
+}
+/* 頁面cursor */
+a{
+    cursor: pointer;
+}
+input {
+    cursor: text;
+}
+i {
+    cursor: pointer;
+}
+.login_form_email_feild{
+    cursor: text;
+}
+.login_form_submit_feild_wrap{
+    cursor: pointer;
+}
+.register_form_data_feild{
+    cursor: text;
+}
+.register_form_submit_feild{
+    cursor: pointer;
+}
+.login_form_password_feild{
+    cursor: text;
+}
+.login_form_keeplogin_btn{
+    cursor: pointer;
+}
+button {
+    cursor: pointer;
+}
+
+/* 避免左右scroll bar出現 */
+.login_right_col{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+/* 背景動畫-------------------------------------------------------------- */
+.login_bgc_slide {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 背景圖片動畫 */
+.box-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.box-1 img {
+    width: 100%;
+}
+
+.box-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.box-2 img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+#slide {
+    width: 100%;
+    /* height: ; */
+    position: absolute;
+    animation: slide 100s linear infinite;
+}
+
+/* 背景 ----------------------------------------------------------------------*/
+.login_bgc {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(26, 29, 36, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* 左邊區塊 */
+.login_left_col {
+    width: 100%;
+    height: auto;
+}
+
+/* 左上角的logo */
+.login_logo {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.login_logo img {
+    height: 3rem;
+}
+
+/* 右邊區塊 ------------------------------------------------------------------------*/
+.login_right_col {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: auto;
+}
+
+/* 登入區塊container */
+.login_form_container {
+    width: 90%;
+    /* height: 80vh; */
+    transition: .3s;
+}
+
+/* 登入區塊背景框 */
+.login_form_col {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 29, 35, 0.97);
+    border-radius: 10px;
+    padding: 40px 20px;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+}
+
+/* 包住第一張表 的第一張表 */
+.login_form_email_first form {
+    display: flex;
+    flex-direction: column;
+    /* margin: 20px 0; */
+}
+
+/* 表的區塊一 */
+.login_form_email_feild {
+    margin: 0 0 40px 0;
+}
+
+/* 表的區塊二 */
+.login_form_submit_feild {
+    margin: 40px 0 0 0;
+}
+
+/* 區塊二的wrap */
+.login_form_submit_feild_wrap {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+}
+
+/* 第一張表的按鈕 */
+.login_form_email_first form button {
+    all: unset;
+    width: 100%;
+    height: 48px;
+    /* margin: 20px 0; */
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #10FFA2;
+    color: #10FFA2;
+    transition: .1s;
+}
+
+.login_form_email_first form button:hover {
+    background-color: #10FFA2;
+    color: #1A1D24;
+    box-shadow: 0px 0px 3px 3px rgba(16, 255, 163, 0.2);
+}
+
+/* 第一張表的input只有email */
+.login_form_email_first form input {
+    all: unset;
+    width: 100%;
+    height: 48px;
+    /* margin: 20px 0; */
+    text-indent: 10px;
+    line-height: 48px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    transition: .1s;
+}
+
+.login_form_email_first form input:focus {
+    border: 1px solid #10FFA2;
+    box-shadow: 0px 0px 3px 3px rgba(16, 255, 163, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+/* 標題 登入 */
+.login_form_col h2 {
+    font-size: 2rem;
+    line-height: 2;
+    margin: 0 0 20px 0;
+}
+
+/* 內文大小 */
+.login_form_col h5 {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: lighter;
+    line-height: 2;
+    margin: 20px 0;
+}
+
+/* 內文大小 連結綠色 */
+.login_form_col h5 a {
+    text-decoration: none;
+    color: #10FFA2;
+}
+
+.login_form_col h5 a:hover {
+    border-bottom: 1px solid #10FFA2;
+}
+
+/* 繼續btn */
+.login_form_one_continue {
+    animation-timing-function: linear;
+    animation-duration: .3s;
+    /* animation-fill-mode:initial; */
+}
+
+@keyframes widthgone {
+    0% {
+        opacity: 1;
+        width: 100%;
+    }
+
+    90% {
+        opacity: 1;
+        width: 10%;
+    }
+
+    99% {
+        opacity: 0;
+        width: 1%;
+    }
+
+    100% {
+        opacity: 0;
+        width: 0;
+    }
+
+}
+
+/* 表單的label 還有分隔線 */
+.login_form_col p,
+.login_form_col form {
+    font-size: 1rem;
+    line-height: 2;
+    /* margin: 20px 0; */
+}
+
+/* 或 分隔線的區塊 */
+.login_form_divideline {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+
+/* 左右兩條線 */
+.login_form_divideline_parts {
+    width: 40%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* 社群帳號區塊 */
+.login_form_thirdparty_login {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+
+/* 社群帳號按鈕 */
+.login_form_thirdparty_btn {
+    width: 48%;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 社群帳號a連結 */
+.login_form_thirdparty_btn a {
+    text-decoration: none;
+    margin-left: 4px;
+}
+
+/* 社群帳號 按鈕第二個class */
+.login_google {
+    background-color: white;
+}
+
+.login_google a {
+    color: #1A1D24;
+}
+
+.login_google:hover {
+    border: 1px solid #10FFA2;
+}
+
+/* 社群帳號 按鈕第二個class */
+.login_fb {
+    background-color: #175DEE;
+}
+
+.login_fb a {
+    color: #fff;
+}
+
+.login_fb:hover {
+    border: 1px solid #10FFA2;
+}
+
+/* 錯誤訊息----------------------------------------------------------------------- */
+.member_email_alert {
+    position: relative;
+    width: 100%;
+    height: 48px;
+}
+
+.member_email_alert p {
+    color: #E70C10;
+}
+
+.member_email_alert img {
+    position: absolute;
+    top: -65%;
+    right: 10px;
+}
+
+.member_email_alert span {
+    color: white;
+}
+
+.member_email_alert a {
+    color: #10FFA2;
+    text-decoration: none;
+}
+
+.member_email_alert a:hover {
+    border-bottom: 1px solid #10FFA2;
+}
+
+
+/* loading狀態 ---------------------------------------------------------------------*/
+/* 區塊二的loading畫面 */
+.login_loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.box span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    /* background: #10FFA2; */
+}
+
+.box span img {
+    width: 100%;
+    height: 100%;
+}
+
+.box span:nth-child(1) {
+    /* background: #FEB73A; */
+
+    /* background-image: url("./images/ex-img/logo.gif"); */
+
+    /* box-shadow: 0 0 10px 3px  rgba(254, 182, 58, 0.5); */
+
+    z-index: 1;
+    animation: loginloading 2s linear infinite;
+}
+
+.box span:nth-child(2) {
+    /* background: #10FFA2; */
+    /* background: url(./images/logo.gif); */
+    /* box-shadow: 0 0 10px 3px  rgba(16, 255, 163, 0.5); */
+    z-index: 1;
+    animation: loginloading 2s linear infinite;
+    /* 延遲-1s開場不會卡頓 */
+    animation-delay: -1s;
+}
+
+@keyframes loginloading {
+    0% {
+        transform: rotate(0);
+        top: 0;
+        left: 0;
+    }
+
+    /* 5% {
+        transform: rotate(0);
+        top: 0;
+        left: 0;
+    } */
+    20% {
+        transform: rotate(0);
+        top: 0;
+        left: 60px;
+    }
+
+    25% {
+        transform: rotate(90deg);
+        top: 0;
+        left: 60px;
+    }
+
+    /* 30% {
+        transform: rotate(90deg);
+        top: 0;
+        left: 50%;
+    } */
+    45% {
+        transform: rotate(90deg);
+        top: 60px;
+        left: 60px;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        top: 60px;
+        left: 60px;
+    }
+
+    /* 55% {
+        transform: rotate(180deg);
+        top: 50%;
+        left: 50%;
+    } */
+
+    70% {
+        transform: rotate(180deg);
+        top: 60px;
+        left: 0%;
+    }
+
+    75% {
+        transform: rotate(270deg);
+        top: 60px;
+        left: 0%;
+    }
+
+    /* 80% {
+        transform: rotate(270deg);
+        top: 50%;
+        left: 0%;
+    } */
+
+
+    95% {
+        transform: rotate(270deg);
+        top: 0;
+        left: 0%;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        top: 0;
+        left: 0%;
+    }
+}
+
+
+/* 密碼表單------------------------------------------------------------------------- */
+/* 密碼表單頭像 要抓資料 */
+.login_form_title_usericon {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.login_form_title_usericon_frame {
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* 密碼表單 密碼 */
+.login_form_Password {
+    display: flex;
+    flex-direction: column;
+}
+
+.login_form_password_feild>div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* 密碼input */
+.member_password {
+    all: unset;
+    width: 100%;
+    height: 48px;
+    /* margin: 20px 0; */
+    text-indent: 10px;
+    line-height: 48px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    transition: .1s;
+}
+
+.member_password:focus {
+    border: 1px solid #10FFA2;
+    box-shadow: 0px 0px 3px 3px rgba(16, 255, 163, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+/* 密碼狀態控制 */
+.member_password_status {
+    position: absolute;
+    width: 20%;
+    height: 48px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: 26px;
+    right: 10px;
+}
+
+.member_password_status i {
+    color: #fff;
+    font-size: 14px;
+    margin-right: 4px;
+}
+
+.member_password_status .fa-triangle-exclamation {
+    color: #E70C10;
+}
+
+.member_password_status .fa-check {
+    color: #10FFA2;
+}
+
+.member_password_status i:nth-child(1):hover,
+.member_password_status i:nth-child(2):hover {
+    color: #10FFA2;
+}
+
+/* 密碼unput 錯誤訊息 --------------------------------------------------------------*/
+.member_password_alert {
+    position: relative;
+}
+
+.member_password_alert a {
+    color: #10FFA2;
+    text-decoration: none;
+}
+
+.member_password_alert a:hover {
+    border-bottom: 1px solid #10FFA2;
+}
+
+.member_password_alert p {
+    color: #E70C10;
+}
+
+/* 保持登入區域 */
+.login_form_keeplogin {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* 保持登入按鈕wrap */
+.login_form_keeplogin_btn {
+    position: relative;
+    width: 30px;
+    height: 14px;
+    margin-right: 10px;
+}
+
+/* 保持登入背景 */
+.login_form_keeplogin_btn_bgc {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid rgba(16, 255, 163, 0.337);
+}
+
+.login_form_keeplogin_btn_toggle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: hsla(222, 16%, 12%, 0.5);
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    transition: .3s;
+}
+
+.login_form_keeplogin_btn_toggle_on {
+    top: 1px;
+    right: 2px;
+    left: auto;
+    background-color: #10FFA2;
+}
+
+/* 密碼表單繼續按鈕 */
+.login_form_email_first form button {
+    all: unset;
+    width: 100%;
+    height: 48px;
+    /* margin: 20px 0; */
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #10FFA2;
+    color: #10FFA2;
+    transition: .1s;
+}
+
+.login_form_email_first form button:hover {
+    background-color: #10FFA2;
+    color: #1A1D24;
+    box-shadow: 0px 0px 3px 3px rgba(16, 255, 163, 0.2);
+}
+
+.login_form_password_first form button {
+    all: unset;
+    width: 100%;
+    height: 48px;
+    /* margin: 20px 0; */
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #10FFA2;
+    color: #10FFA2;
+    transition: .1s;
+}
+
+.login_form_password_first form button:hover {
+    background-color: #10FFA2;
+    color: #1A1D24;
+    box-shadow: 0px 0px 3px 3px rgba(16, 255, 163, 0.2);
+}
+
+/* 密碼表單分隔線 */
+.login_form_divideline_full {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* 密碼表單回到登入頁面 */
+.login_form_backtologin a {
+    text-decoration: none;
+    color: #10FFA2;
+}
+
+.login_form_backtologin a:hover {
+    border-bottom: 1px solid #10FFA2;
+}
+
+/* 登入成功 */
+.login_form_login_success {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 200px;
+}
+
+.login_form_login_success .login_form_title_usericon .login_form_title {
+    margin-bottom: 0;
+}
+
+.login_form_toindex {
+    margin: 0 0 40px 0;
+}
+
+.login_form_login_success button {
+    all: unset;
+    margin: 40px 0;
+    width: 100%;
+    height: 48px;
+    /* margin: 20px 0; */
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #10FFA2;
+    color: #10FFA2;
+    transition: .1s;
+}
+
+.login_form_login_success button:hover {
+    background-color: #10FFA2;
+    color: #1A1D24;
+    box-shadow: 0px 0px 3px 3px rgba(16, 255, 163, 0.2);
+}
+
+.login_form_toindex span {
+    color: #10FFA2;
+}
+
+@keyframes formshake {
+    0% {
+        transform: translateX(-10px);
+    }
+
+    25% {
+        transform: translateX(10px);
+    }
+
+    50% {
+        transform: translateX(-10px);
+    }
+
+    75% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/* 註冊頁面 --------------------------------------------------------- */
+.register_form_container {
+    width: 90%;
+    /* height: 80vh; */
+    transition: .3s;
+}
+
+.register_form_col {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 29, 35, 0.97);
+    border-radius: 10px;
+    padding: 20px 20px;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+}
+
+.register_form_wrap form {
+    display: flex;
+    flex-direction: column;
+    /* margin: 20px 0; */
+}
+
+.register_form_data_feild {
+    margin: 0 0 10px 0;
+}
+
+.register_form_submit_feild {
+    margin: 40px 0 0 0;
+}
+
+.register_form_submit_feild_wrap {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+}
+
+.register_form_wrap form button {
+    all: unset;
+    width: 100%;
+    height: 48px;
+    /* margin: 20px 0; */
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #10FFA2;
+    color: #10FFA2;
+    transition: .1s;
+}
+
+.register_form_wrap form button:hover {
+    background-color: #10FFA2;
+    color: #1A1D24;
+    box-shadow: 0px 0px 3px 3px rgba(16, 255, 163, 0.2);
+}
+
+
+.register_form_wrap form input {
+    all: unset;
+    width: 100%;
+    height: 40px;
+    /* margin: 20px 0; */
+    text-indent: 10px;
+    line-height: 48px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    transition: .1s;
+}
+
+.register_form_wrap form input:focus {
+    border: 1px solid #10FFA2;
+    box-shadow: 0px 0px 3px 3px rgba(16, 255, 163, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+/* 標題 登入 */
+.register_form_col h2 {
+    font-size: 2rem;
+    line-height: 2;
+    margin: 0 0 20px 0;
+}
+
+/* 內文大小 */
+.register_form_col h5 {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: lighter;
+    line-height: 2;
+    margin: 20px 0;
+}
+
+/* 內文大小 連結綠色 */
+.register_form_col h5 a {
+    text-decoration: none;
+    color: #10FFA2;
+}
+
+.register_form_col h5 a:hover {
+    border-bottom: 1px solid #10FFA2;
+}
+
+/* 繼續btn */
+.register_form_one_continue {
+    animation-timing-function: linear;
+    animation-duration: .3s;
+    /* animation-fill-mode:initial; */
+}
+
+/* 表單的label 還有分隔線 */
+.register_form_col p,
+.register_form_col form {
+    font-size: 1rem;
+    line-height: 2;
+    /* margin: 20px 0; */
+}
+
+/* 或 分隔線的區塊 */
+.register_form_divideline {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+
+/* 左右兩條線 */
+.register_form_divideline_parts {
+    width: 40%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* 社群帳號區塊 */
+.register_form_thirdparty_register {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 40px 0;
+}
+
+/* 社群帳號按鈕 */
+.register_form_thirdparty_btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+/* 社群帳號a連結 */
+.register_form_thirdparty_btn a {
+    text-decoration: none;
+    margin-left: 4px;
+}
+
+/* 社群帳號 按鈕第二個class */
+.register_google {
+    background-color: white;
+}
+
+.register_google a {
+    color: #1A1D24;
+}
+
+.register_google:hover {
+    border: 1px solid #10FFA2;
+}
+
+/* 社群帳號 按鈕第二個class */
+.register_fb {
+    background-color: #175DEE;
+}
+
+.register_fb a {
+    color: #fff;
+}
+
+.register_fb:hover {
+    border: 1px solid #10FFA2;
+}
+
+/* 註冊欄位爸爸 */
+.register_form_data_feild>div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* 註冊email狀態欄 */
+.register_email_status {
+    position: absolute;
+        width: 20%;
+        height: 42px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        top: 24px;
+        right: 10px;
+}
+
+.register_email_status i {
+    margin-right: 4px;
+}
+
+.register_email_status i:nth-child(1) {
+    color: #E70C10;
+}
+
+.register_email_status i:nth-child(2) {
+    color: #10FFA2;
+}
+
+/* 註冊email狀態文字 */
+.register_email_alert p {
+    color: #E70C10;
+}
+
+.register_email_alert a {
+    color: #10FFA2;
+    text-decoration: none;
+}
+
+.register_email_alert span {
+    color: white;
+}
+
+/* 註冊密碼狀態欄 */
+.register_password_status {
+    position: absolute;
+        width: 20%;
+        height: 42px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        top: 24px;
+        right: 10px;
+}
+
+.register_password_status i {
+    margin-right: 4px;
+}
+
+.register_password_status i:nth-child(1):hover,
+.register_password_status i:nth-child(2):hover {
+    color: #10FFA2;
+}
+
+.register_password_status i:nth-child(3) {
+    color: #E70C10;
+}
+
+.register_password_status i:nth-child(4) {
+    color: #10FFA2;
+}
+
+/* 註冊密碼狀態文字 */
+.register_password_alert p {
+    color: #E70C10;
+}
+
+.register_password_alert a {
+    color: #10FFA2;
+    text-decoration: none;
+}
+
+.register_password_alert span {
+    color: white;
+}
+
+/* 註冊密碼確認狀態欄 */
+.register_password_confirm_status {
+    position: absolute;
+        width: 20%;
+        height: 42px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        top: 24px;
+        right: 10px;
+}
+
+.register_password_confirm_status i {
+    margin-right: 4px;
+}
+
+.register_password_confirm_status i:nth-child(1):hover,
+.register_password_confirm_status i:nth-child(2):hover {
+    color: #10FFA2;
+}
+
+.register_password_confirm_status i:nth-child(3) {
+    color: #E70C10;
+}
+
+.register_password_confirm_status i:nth-child(4) {
+    color: #10FFA2;
+}
+
+/* 註冊密碼確認狀態文字 */
+.register_password_confirm_alert p {
+    color: #E70C10;
+}
+
+.register_password_confirm_alert a {
+    color: #10FFA2;
+    text-decoration: none;
+}
+
+.register_password_confirm_alert span {
+    color: white;
+}
+/* 註冊invite撞態欄 */
+.register_invite_status {
+    position: absolute;
+        width: 20%;
+        height: 42px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        top: 24px;
+        right: 10px;
+}
+
+.register_invite_confirm_status i {
+    margin-right: 4px;
+}
+
+.register_invite_status i:nth-child(1) {
+    color: #E70C10;
+}
+
+.register_invite_status i:nth-child(2) {
+    color: #10FFA2;
+}
+
+/* 註冊invite狀態文字 */
+.register_invite_confirm_alert p {
+    color: #E70C10;
+}
+
+.register_invite_confirm_alert a {
+    color: #10FFA2;
+    text-decoration: none;
+}
+
+.register_invite_confirm_alert span {
+    color: white;
+}
+/* 註冊成功 */
+.register_form_register_success {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 200px;
+}
+
+.register_form_register_success .register_form_title_usericon .register_form_title {
+    margin-bottom: 0;
+}
+
+.register_form_toindex {
+    margin: 0 0 40px 0;
+}
+
+.register_form_register_success button {
+    all: unset;
+    margin: 40px 0;
+    width: 100%;
+    height: 48px;
+    /* margin: 20px 0; */
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #10FFA2;
+    color: #10FFA2;
+    transition: .1s;
+}
+
+.register_form_register_success button:hover {
+    background-color: #10FFA2;
+    color: #1A1D24;
+    box-shadow: 0px 0px 3px 3px rgba(16, 255, 163, 0.2);
+}
+
+.register_form_toindex a {
+    color: #10FFA2;
+    text-decoration: none;
+}
+.register_form_title_usericon{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.register_form_title_usericon_frame{
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* 消失----------------------------------------------------------------------- */
+.login_d_none {
+    display: none;
+}
+/* ---RWD--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width: 750px) {
+
+    /* 背景 ----------------------------------------------------------*/
+    .login_bgc {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* 左側logo */
+    .login_left_col {
+        width: 50%;
+        height: 100%;
+    }
+
+    .login_logo img {
+        height: 4rem;
+    }
+
+    /* 右側表單區---------------------------------------------------------------- */
+    .login_right_col {
+        width: 50%;
+        justify-content: center;
+    }
+
+    /* 表單container */
+    .login_form_container {
+        width: 50%;
+        height: 80vh;
+    }
+
+    /* 表單背景和padding */
+    .login_form_col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* margin: 40px 0px; */
+        padding: 40px 40px;
+    }
+
+    /* 表單一的按鈕 */
+    .login_form_email_first form button {
+        /* margin: 40px 0; */
+    }
+
+    /* 表單一的input 只有email */
+    .login_form_email_first form input {
+        /* margin: 20px 0; */
+        text-indent: 20px;
+    }
+
+    /* 表單一的標題 */
+    .login_form_col h2 {
+        font-size: 3rem;
+        line-height: 2;
+        margin: 0 0 40px 0;
+    }
+
+    /* 表單一的內文 */
+    .login_form_col h5 {
+        font-size: 1.4rem;
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: lighter;
+        line-height: 2;
+        margin: 40px 0;
+    }
+
+    /* 表單一a 綠色 */
+    .login_form_col h5 a {
+        text-decoration: none;
+        color: #10FFA2;
+    }
+
+    /* 表單一的 label*/
+    .login_form_col p,
+    .login_form_col form {
+        font-size: 1.2rem;
+        line-height: 2;
+        /* margin: 20px 0; */
+    }
+
+    /* 密碼狀態控制 */
+    .member_password_status {
+        top: 30px;
+    }
+
+    /* 表單container */
+    .register_form_container {
+        width: 50%;
+        /* height: 80vh; */
+    }
+
+    /* 表單背景和padding */
+    .register_form_col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* margin: 40px 0px; */
+        padding: 40px 40px;
+    }
+
+    /* 表單一的按鈕 */
+    .register_form_wrap form button {
+        /* margin: 40px 0; */
+    }
+
+    /* 表單一的input 只有email */
+    .register_form_wrap form input {
+        /* margin: 20px 0; */
+        text-indent: 20px;
+    }
+
+    .register_form_col {
+        padding: 40px 40px;
+    }
+
+    /* 表單一的標題 */
+    .register_form_col h2 {
+        font-size: 3rem;
+        line-height: 2;
+        margin: 0 0 40px 0;
+    }
+
+    /* 表單一的內文 */
+    .register_form_col h5 {
+        font-size: 1.4rem;
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: lighter;
+        line-height: 2;
+        margin: 40px 0;
+    }
+
+    /* 表單一a 綠色 */
+    .register_form_col h5 a {
+        text-decoration: none;
+        color: #10FFA2;
+    }
+
+    /* 表單一的 label*/
+    .register_form_col p,
+    .register_form_col form {
+        font-size: 1.2rem;
+        line-height: 2;
+        /* margin: 20px 0; */
+    }
+
+    /* 註冊表單 */
+    .register_form_wrap form input {
+        height: 48px;
+    }
+    .register_invite_status, .register_password_confirm_status, .register_password_status, .register_email_status{
+        position: absolute;
+    width: 20%;
+    height: 48px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: 30px;
+    right: 10px;
+    }
+
+    /* 消失----------------------------------------------------------------------------- */
+    .login_d_none {
+        display: none;
+    }
+}
