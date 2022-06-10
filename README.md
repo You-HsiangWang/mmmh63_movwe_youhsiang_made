@@ -15,4 +15,4 @@ php_page -> 存放網站頁面
 php_parts -> 存放include到網頁中的重複部件
 sql -> 存放資料表
 
-last edit 0610_ver1.
+last edit 0610_ver1.1
