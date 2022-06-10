@@ -3,7 +3,7 @@
 [說明](#說明)<br>
 [資料夾結構](#資料夾結構)
 ## 說明
-此repo將我在Movwe專案中所負責的程式碼獨立出來呈現。(fork下來後頁面將無法正常呈現)
+此repo將我在Movwe專案中所負責的程式碼獨立出來呈現。(fork下來後頁面將無法正常呈現)<br>
 [Movwe專案](https://github.com/You-HsiangWang/mmmh63_Movwe) -> https://github.com/You-HsiangWang/mmmh63_Movwe
 ## 資料夾結構
 css -> css
@@ -15,4 +15,4 @@ php_page -> 存放網站頁面
 php_parts -> 存放include到網頁中的重複部件
 sql -> 存放資料表
 
-last edit 0610_ver1.0
+last edit 0610_ver1.
